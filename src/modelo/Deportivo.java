@@ -15,6 +15,18 @@ public class Deportivo extends Calzado{
     public Deportivo() {
     }
 
+    @Override
+    public int valorAPagar() { //valor venta  + impuestoIva + impuestoMaterial
+        int valorAPagar = -1;
+        if(this.getProducto().getStock()>0){//hay stock;
+            valorAPagar = this.valorVenta() + impuestoIva() + impuestoMaterial();
+            this.getProducto().setStock(this.getProducto().getStock()-1);
+            return  valorAPagar;
+        }else{
+            return valorAPagar;
+        }
+    }
+
     public String getTipoDeporte() {
         return tipoDeporte;
     }
@@ -29,5 +41,17 @@ public class Deportivo extends Calzado{
 
     public void setTipoMaterial(String tipoMaterial) {
         this.tipoMaterial = tipoMaterial;
+    }
+
+    //•	impuestoMaterial: retornará el valor de impuesto de material el
+    // cual es un 15% del valor base si el calzado es de Cuero y de un 6% del valor base si es de Lona
+    public int impuestoMaterial(){
+        int impuestoMaterial = 0;
+        if(this.getTipoMaterial().equalsIgnoreCase("Cuero")){
+            impuestoMaterial = Math.round(this.getProducto().getValorBase()*15/100);
+        }else if(this.getTipoMaterial().equalsIgnoreCase("Lona")){
+            impuestoMaterial = Math.round(this.getProducto().getValorBase()*6/100);
+        }
+        return  impuestoMaterial;
     }
 }
