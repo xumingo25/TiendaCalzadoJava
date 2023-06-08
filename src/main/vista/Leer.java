@@ -1,4 +1,4 @@
-package vista;
+package main.vista;
 import java.io.*;
 class Leer
 {

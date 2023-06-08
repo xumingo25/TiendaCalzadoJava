@@ -1,4 +1,4 @@
-package modelo;
+package main.modelo;
 
 public abstract class Calzado {
     //día de venta  (“semana” o “fin de semana”)

@@ -1,4 +1,4 @@
-package modelo;
+package main.modelo;
 
 public class Producto {
     //Nombre, Atributos y Métodos

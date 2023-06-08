@@ -1,13 +1,4 @@
-package vista;
-
-import controlador.TiendaCalzado;
-import modelo.Deportivo;
-import modelo.Hombre;
-import modelo.Mujer;
-import modelo.Producto;
-
-import java.sql.SQLOutput;
-import java.util.ArrayList;
+package main.vista;
 
 public class AppTests {/*
     public static void main(String[] args) {

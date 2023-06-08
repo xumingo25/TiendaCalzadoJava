@@ -1,4 +1,4 @@
-package modelo;
+package main.modelo;
 
 public class Deportivo extends Calzado{
     protected String tipoDeporte;

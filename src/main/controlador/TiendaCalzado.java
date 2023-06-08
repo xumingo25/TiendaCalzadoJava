@@ -1,9 +1,9 @@
-package controlador;
+package main.controlador;
 
-import modelo.Calzado;
-import modelo.Deportivo;
-import modelo.Hombre;
-import modelo.Mujer;
+import main.modelo.Calzado;
+import main.modelo.Deportivo;
+import main.modelo.Hombre;
+import main.modelo.Mujer;
 
 import java.util.ArrayList;
 

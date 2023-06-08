@@ -1,4 +1,4 @@
-package modelo;
+package main.modelo;
 
 public abstract class Formal extends Calzado{
     protected String color;

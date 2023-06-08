@@ -1,10 +1,10 @@
-package vista;
+package main.vista;
 
-import controlador.TiendaCalzado;
-import modelo.Deportivo;
-import modelo.Hombre;
-import modelo.Mujer;
-import modelo.Producto;
+import main.controlador.TiendaCalzado;
+import main.modelo.Deportivo;
+import main.modelo.Hombre;
+import main.modelo.Mujer;
+import main.modelo.Producto;
 
 import java.util.ArrayList;
 
